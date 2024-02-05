@@ -1,0 +1,25 @@
+****Docker volume****
+Create --> create volume
+eg :: docker volume create new_name
+
+inspect --> details of volume_name
+eg :: docker voulme inspect volume_name
+
+ls --> list of the volume
+eg :: docker volume ls
+
+prune--> remove all unused local volumes
+eg :: docker volume prune
+
+rm--> remove one or more volumes
+eg :: docker volume rm voiume_name
+
+Run
+docker run -d -it  --name ubuntu1 --mount source=voiume_name,destination=/data /bin/bash
+
+Exec
+docker exec -it ubuntu1 /bin/bash
+
+bind volume or host volume
+docker run -d -it --name ubuntu1 -v /data/anyname:/suriya ubuntu /bin/bash
+

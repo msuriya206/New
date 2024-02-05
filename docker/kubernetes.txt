@@ -1,0 +1,8 @@
+Auto-healing
+If any container creased or down,its auromaticaly created container
+(container maight crash or go down and need to be replaced)
+Auto-scaling
+if traffic is high auromaticaly created container,if no traffic is high auromaticaly down the container
+(we might need more container for more traffic)
+Load balance
+(Distribute the traffic)
